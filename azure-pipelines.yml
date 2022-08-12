@@ -15,7 +15,7 @@ steps:
     rootFolderOrFile: '$(build.sourcesDirectory)'
     includeRootFolder: false
 - task: PublishBuildArtifacts@1
--script: |
+- script: |
     npm install
     npm run build
   displayName: 'npm install, build'
